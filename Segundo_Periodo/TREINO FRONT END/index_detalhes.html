@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- Define que o documento segue o padrão moderno do HTML5 -->
+<html lang="pt-BR">
+<!-- Início da página web com o idioma principal definido como Português do Brasil -->
+<head>
+    <!-- Configuração da codificação de caracteres para suportar acentos (UTF-8) -->
+    <meta charset="UTF-8">
+    <!-- Garante que a página seja responsiva e se ajuste a celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece na aba do navegador -->
+    <title>Rota da Inclusão - Detalhes</title>
+    
+    <!-- Tailwind CSS: Framework de estilização pronto (carregado via link externo/CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome: Biblioteca de ícones (estrela, localização, loja, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<!-- Corpo da página (body): Fundo cinza claro, fonte padrão sans-serif e flexbox para layout min-h-screen -->
+<body class="bg-gray-100 text-gray-800 font-sans antialiased p-4 md:p-8 flex flex-col justify-between min-h-screen">
+
+    <!-- Container centralizado que limita a largura máxima da aplicação -->
+    <div class="max-w-5xl mx-auto w-full">
+        <!-- Caixa principal com fundo branco, cantos arredondados, sombra e borda -->
+        <div class="bg-white rounded-2xl shadow-xl border border-gray-300 overflow-hidden">
+            
+            <!-- Faixa Superior Azul (Cabeçalho de identificação) -->
+            <div class="bg-blue-900 text-white text-xs px-6 py-2 flex justify-between items-center">
+                <!-- Texto identificando a tela atual -->
+                <span class="font-semibold">Rota da Inclusão - Detalhes</span>
+                <!-- Identificação do grupo acadêmico -->
+                <span class="text-blue-200">Grupo 1</span>
+            </div>
+
+            <!-- MENU PRINCIPAL: Barra de navegação com link de retorno -->
+            <header class="bg-blue-800 text-white px-6 py-4 flex justify-between items-center shadow-md">
+                <!-- Logotipo do sistema com ícone de acessibilidade -->
+                <div class="flex items-center space-x-2 text-xl font-bold tracking-tight">
+                    <i class="fa-solid fa-wheelchair text-blue-200"></i>
+                    <span>LOGO &</span>
+                </div>
+                <!-- Links de navegação do menu principal -->
+                <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-wider">
+                    <a href="index.html" class="text-blue-200 hover:text-white transition">Início</a>
+                    <a href="index_detalhes.html" class="text-white hover:text-blue-200 transition">Detalhes</a>
+                </nav>
+                <!-- Botão VOLTAR apontando para a página inicial (index.html) -->
+                <a href="index.html" class="border-2 border-white text-white px-4 py-1.5 rounded text-xs font-bold hover:bg-white hover:text-blue-800 transition shadow-sm">
+                    [ VOLTAR ]
+                </a>
+            </header>
+
+            <!-- Conteúdo Principal da Página (Main) -->
+            <main class="p-6 md:p-8">
+                
+                <!-- Trilha de Navegação (Breadcrumb / Caminho da página) -->
+                <div class="border border-gray-300 rounded-full px-4 py-1.5 text-xs text-gray-600 max-w-md mb-6 font-bold flex items-center space-x-1">
+                    <span class="text-blue-800">RI</span> <span>|</span> <span>Rota da inclusão &gt;</span> <span class="text-gray-800">Shopping Central - Sul</span>
+                </div>
+
+                <!-- Card de Informações Principais do Estabelecimento -->
+                <div class="border border-gray-200 rounded-xl p-6 mb-6 shadow-sm">
+                    <!-- Grid responsivo: 1 coluna em telas pequenas e 12 colunas em telas médias/grandes -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                        
+                        <!-- Coluna da Foto do Local (Ocupa 5 colunas no desktop) -->
+                        <div class="md:col-span-5 bg-blue-50 border-2 border-dashed border-blue-200 rounded-xl h-56 flex flex-col items-center justify-center text-center p-2 overflow-hidden relative">
+                            <!-- Imagem do shopping com tratamento de erro (fallback caso a imagem não carregue) -->
+                            <img src="fundo.jpeg" alt="Shopping Central - Sul" class="w-full h-full object-cover rounded-lg" onerror="this.style.display='none'; document.getElementById('txtFallback').style.display='block';">
+                            <!-- Mensagem alternativa de texto exibida se a foto falhar -->
+                            <div id="txtFallback" class="hidden text-blue-800 font-bold text-sm">
+                                <i class="fa-solid fa-store text-4xl text-blue-400 mb-2"></i><br>
+                                FOTO DO LOCAL<br>
+                                <span class="text-xs text-gray-500 font-normal">Shopping Central - Sul</span>
+                            </div>
+                        </div>
+
+                        <!-- Coluna de Informações e Ações (Ocupa 7 colunas no desktop) -->
+                        <div class="md:col-span-7">
+                            <!-- Nome do Estabelecimento -->
+                            <h2 class="text-2xl font-bold text-gray-900 mb-1">Shopping Central - Sul</h2>
+                            
+                            <!-- SEÇÃO DE AVALIAÇÃO: Ajustada para 4,5 Estrelas -->
+                            <div class="flex items-center space-x-1 text-amber-500 text-sm mb-2">
+                                <!-- 4 Estrelas Cheias -->
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <!-- 1 Meia Estrela (Representando 0.5) -->
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <!-- Texto numérico e descrição da nota -->
+                                <span class="text-gray-800 font-extrabold ml-1.5 text-xs">4,5 estrelas</span>
+                            </div>
+                            
+                            <!-- Descrição breve do estabelecimento -->
+                            <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                                É um dos principais pontos de acesso e convergência do empreendimento.
+                            </p>
+
+                            <!-- Caixas de Seleção (Checkboxes) de Itens de Acessibilidade Disponíveis -->
+                            <div class="flex flex-wrap gap-4 mb-6 text-xs font-bold text-gray-800">
+                                <!-- Item 1: Rampa -->
+                                <label class="flex items-center space-x-1.5 bg-gray-50 px-2.5 py-1 rounded border border-gray-200">
+                                    <input type="checkbox" checked disabled class="text-blue-600 rounded">
+                                    <span>Rampa</span>
+                                </label>
+                                <!-- Item 2: Banheiro Acessível -->
+                                <label class="flex items-center space-x-1.5 bg-gray-50 px-2.5 py-1 rounded border border-gray-200">
+                                    <input type="checkbox" checked disabled class="text-blue-600 rounded">
+                                    <span>Banheiro acessível</span>
+                                </label>
+                                <!-- Item 3: Outros Recursos -->
+                                <label class="flex items-center space-x-1.5 bg-gray-50 px-2.5 py-1 rounded border border-gray-200">
+                                    <input type="checkbox" checked disabled class="text-blue-600 rounded">
+                                    <span>Outros</span>
+                                </label>
+                            </div>
+
+                            <!-- Botões de Ação Interativos -->
+                            <div class="flex flex-wrap gap-3 text-xs font-bold">
+                                <!-- Botão SABER MAIS: Exibe um alerta no navegador com os detalhes de acessibilidade -->
+                                <button onclick="alert('Informações de Acessibilidade:\nRampas de acesso suave;\nElevadores adaptados com sinal sonoro e Braille;\nBanheiros adaptados em todos os pavimentos.')" class="border-2 border-blue-800 text-blue-800 px-4 py-2 rounded-lg hover:bg-blue-50 transition cursor-pointer">
+                                    SABER MAIS
+                                </button>
+                                <!-- Botão MAPA - GPS: Abre a localização do local no Google Maps em nova aba -->
+                                <button onclick="window.open('https://maps.google.com/?q=Shopping+Central+Sul+Palmas', '_blank')" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition flex items-center space-x-1 cursor-pointer">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>MAPA - GPS</span>
+                                </button>
+                                <!-- Botão COMPARAR: Simula ação de adicionar para comparação -->
+                                <button onclick="alert('Estabelecimento adicionado para comparação.')" class="border-2 border-gray-400 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100 transition cursor-pointer">
+                                    COMPARAR
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seção de Comentários e Avaliações dos Usuários -->
+                <div class="border border-gray-200 rounded-xl p-6 shadow-sm">
+                    <h3 class="font-bold text-sm mb-3 text-gray-900">Comentários:</h3>
+                    
+                    <!-- Lista de Comentários Cadastrados -->
+                    <div class="text-xs space-y-3 mb-4 text-gray-800">
+                        <!-- Comentário 1 -->
+                        <div class="border-b border-gray-100 pb-2">
+                            <p><strong>C1:</strong> Muito bom <span class="text-amber-500">★★★★★</span></p>
+                        </div>
+                        <!-- Comentário 2 -->
+                        <div class="border-b border-gray-100 pb-2">
+                            <p><strong>C2:</strong> Gostei muito, tem rampa e banheiro adaptado!</p>
+                        </div>
+                    </div>
+
+                    <!-- Selo de verificação comunitária -->
+                    <div class="text-[11px] text-gray-500 flex items-center space-x-1 font-medium">
+                        <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                        <span>Avaliação de acessibilidade verificada pela comunidade</span>
+                    </div>
+                </div>
+
+            </main>
+
+            <!-- Rodapé do protótipo indicando a tela exibida -->
+            <footer class="text-center py-2 bg-gray-50 text-[10px] font-bold text-gray-500 border-t border-gray-200">
+                TELA 2: Página de Detalhes - DESKTOP
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

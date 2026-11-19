@@ -1,0 +1,231 @@
+<!--1. Crie uma pasta com seu primeiro nome e coloque todos os arquivos
+ dentro dessa pasta.
+2. Crie uma página com o nome “index.html”. Estruture a página utilizando DIV
+e os demais elementos do HTML para que a página fique igual ou semelhante a
+ imagem ilustrada na rota de aprendizagem.
+3. Crie uma pasta chamada “image” dentro da pasta do projeto e inclua as imagens
+ que estão anexas na rota de aprendizagem para que você possa utiliza-las no projeto que irá codificar.
+4. Crie um arquivo com extensão .css para realizar as formatações da página.
+5. Utilize CSS para fazer a formatação conforme regras abaixo:
+
+Informações para formatação CSS:
+/*dados gerais da página*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*formatação do body da página*/
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f4f4f4;
+}
+
+/*formatação do topo (imagem grande)*/
+background-image: url('image/imgAgro.jpg');
+background-size: cover;
+background-position: center;
+height: 600px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+text-shadow: 2px 2px 4px #000;
+
+/*formatação do texto que está na image grande 
+(<h1>AgroTocantins Produtos Agrícolas</h1>)*/
+font-size: 3em;
+
+/*formatação do menu*/
+nav {
+background-color: #388e3c;
+display: flex;
+justify-content: center;
+}
+
+nav a {
+color: white;
+padding: 15px 25px;
+text-decoration: none;
+display: block;
+font-weight: bold;
+}
+
+/*corpo da página que engloba todo o conteúdo que está abaixo do menu, 
+do título "Quem Somos" até "O que nossos clientes dizem"*/
+max-width: 1200px;
+margin: auto;
+padding: 20px;
+
+
+/*formatação dos blocos que tem o título "Quem Somos" e o texto que vem
+ abaixo dele. Mesma formatação para o bloco que tem o título "Nossos Produtos", 
+ a imagem abaixo dele e o texto*/
+margin-bottom: 40px;
+Observações:
+1 - para os títulos "Quem Somos" e "Nossos Produtos", utilize a tag <h2> 
+2 - para os textos abaixo de cada título do item 1, utilize a tag <p>
+
+/*formatação da imagem que está abaixo do título "Nossos Produtos"*/
+max-width: 200px;
+height: auto;
+border-radius: 8px;
+
+/*formatação do bloco de comentários (bloco total)*/
+margin-bottom: 40px;
+background-color: #e8f5e9;
+border-left: 5px solid #66bb6a;
+padding: 20px;
+border-radius: 8px;
+
+/*formatação do título "O que nossos clientes dizem" que deve está em uma
+ tag <h2>*/
+margin-bottom: 15px;
+color: #2e7d32;
+
+/*formatação do bloco específico de cada comentário*/
+background-color: #ffffff;
+margin-bottom: 15px;
+padding: 15px;
+border-radius: 5px;
+border: 1px solid #c8e6c9;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+Observação: para o texto do comentário você deverá utilizar a tag <p> 
+    e para o nome de cada depoente, você deverá utilizar a tag <strong>.
+
+/*formatação do texto que apresenta o nome do depoente no comentário*/
+color: #388e3c;
+
+/*formatação do rodapé*/
+footer {
+background-color: #2e7d32;
+color: white;
+text-align: center;
+padding: 15px 10px;
+font-size: 0.9em;
+margin-top: 30px;
+}
+
+
+6. Compacte a pasta com todos os arquivos e envie a mesma no local
+indicado da atividade referenciada na rota da aula.
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTocantins Produtos Agrícolas</title>
+    <link rel="stylesheet" href="extensao.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1>AgroTocantins Produtos Agrícolas</h1>
+    </header>
+
+    <nav style="text-align: right;">
+        <a href="#quem-somos">Quem Somos</a>
+        <br>
+        <a href="#produtos">Nossos Produtos</a>
+        <br>
+        <a href="#clientes">Clientes</a>
+        <br>
+    </nav>
+
+    <main>
+
+        <section id="quem-somos" class="bloco">
+            <h2>Quem Somos</h2>
+
+            <p>
+                A AgroTocantins é uma empresa especializada na comercialização
+                de produtos agrícolas, oferecendo soluções de qualidade para
+                produtores rurais. Nosso objetivo é contribuir para o
+                desenvolvimento do agronegócio no Tocantins.
+            </p>
+        </section>
+
+        <section id="produtos" class="bloco">
+            <h2>Nossos Produtos</h2>
+            <div style="text-align: center;">
+
+
+                <input type="checkbox" id="zoom" hidden>
+                <label for="zoom">
+                <img src="image/sementes.jpg" alt="Produtos agrícolas" class="foto-produto">
+            </div>
+            <p>
+                Trabalhamos com produtos agrícolas selecionados para atender
+                às necessidades dos produtores, buscando qualidade, segurança
+                e eficiência para o campo.
+            </p>
+        </section>
+
+        <section id="clientes" class="comentarios">
+
+            <h2>O que nossos clientes dizem</h2>
+
+            <div class="comentario">
+
+                <p>
+                    "Encontrei produtos de excelente qualidade e fui muito
+                    bem atendido pela equipe."
+                </p>
+
+                <strong>João Silva</strong>
+
+            </div>
+
+            <div class="comentario">
+
+                <p>
+                    "A AgroTocantins oferece ótimos produtos e atendimento
+                    de qualidade."
+                </p>
+
+                <strong>Maria Oliveira</strong>
+
+            </div>
+
+            <div class="comentario">
+
+                <p>
+                    "Estou muito satisfeito com os produtos e com o atendimento
+                    prestado pela empresa."
+                </p>
+
+                <strong>Carlos Santos</strong>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            AgroTocantins Produtos Agrícolas - Todos os direitos reservados.
+        </p>
+        
+        <p>Atividade Avaliativa Desenvolvimento Front-end</p>
+        
+        <p>Desenvolvido por: <strong>Jose Volnei Pereira De Sousa</strong> - 2026</p>
+        
+
+    </footer>
+
+</body>
+
+</html>

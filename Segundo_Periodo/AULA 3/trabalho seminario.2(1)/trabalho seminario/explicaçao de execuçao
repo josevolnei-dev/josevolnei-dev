@@ -1,0 +1,9 @@
+### Como executar o projeto Rota da inclusao
+
+1. Abra a pasta do projeto no **Visual Studio Code (VS Code)**.
+2. Certifique-se de que o Java e a extensão **Extension Pack for Java** estejam instalados.
+3. Abra o arquivo `Main.java`.
+4. Clique na opção **Run** ou **Run Java** para executar o programa.
+5. O sistema será iniciado no terminal, apresentando um menu com as opções disponíveis.
+
+**Observação:** Os quatro arquivos (`Main.java`, `Usuario.java`, `Estabelecimento.java` e `Avaliacao.java`) devem permanecer na mesma pasta. Os dados cadastrados ficam disponíveis somente enquanto o programa estiver em execução.

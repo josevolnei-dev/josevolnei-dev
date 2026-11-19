@@ -1,0 +1,1822 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURAÇÕES
+         ===================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESTILO ALTAS MODAS - Barbearia Premium</title>
+
+
+    <!-- =====================================================
+         FONT AWESOME - ÍCONES
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         CSS
+         ===================================================== -->
+
+    <style>
+
+        /* CONFIGURAÇÃO GERAL */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            background: #080808;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =====================================================
+           CABEÇALHO
+           ===================================================== */
+
+        .topo {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 70px;
+
+            background: rgba(8, 8, 8, 0.97);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 35px;
+
+            z-index: 1000;
+
+            border-bottom: 1px solid #222;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #ffffff;
+            white-space: nowrap;
+        }
+
+
+        .logo span {
+            color: #d4af37;
+        }
+
+
+        .logo i {
+            color: #d4af37;
+            margin-right: 8px;
+        }
+
+
+        /* =====================================================
+           MENU PRINCIPAL
+           ===================================================== */
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            list-style: none;
+        }
+
+
+        .menu a {
+            color: #999;
+
+            font-size: 11px;
+
+            font-weight: bold;
+
+            letter-spacing: 1.5px;
+
+            transition: 0.3s;
+        }
+
+
+        .menu a:hover {
+            color: #d4af37;
+        }
+
+
+        /* AGENDAR NO MENU */
+
+        .menu-agendar {
+            background: #d4af37 !important;
+            color: #000 !important;
+
+            padding: 11px 18px;
+
+            border-radius: 30px;
+
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+
+        .menu-agendar:hover {
+            background: #ffffff !important;
+            color: #000 !important;
+        }
+
+
+        /* =====================================================
+           ÍCONES SOCIAIS DO CABEÇALHO
+           ===================================================== */
+
+        .menu-social {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        .menu-social a {
+            width: 38px;
+            height: 38px;
+
+            border: 1px solid #292929;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 17px;
+
+            transition: 0.3s;
+        }
+
+
+        /* WHATSAPP */
+
+        .icone-whatsapp {
+            color: #25D366 !important;
+        }
+
+
+        .icone-whatsapp:hover {
+            background: #25D366;
+            color: #ffffff !important;
+        }
+
+
+        /* INSTAGRAM */
+
+        .icone-instagram {
+            color: #E4405F !important;
+        }
+
+
+        .icone-instagram:hover {
+            background: #E4405F;
+            color: #ffffff !important;
+        }
+
+
+        /* FACEBOOK */
+
+        .icone-facebook {
+            color: #1877F2 !important;
+        }
+
+
+        .icone-facebook:hover {
+            background: #1877F2;
+            color: #ffffff !important;
+        }
+
+
+        /* LOCALIZAÇÃO */
+
+        .icone-localizacao {
+            color: #EA4335 !important;
+        }
+
+
+        .icone-localizacao:hover {
+            background: #EA4335;
+            color: #ffffff !important;
+        }
+
+
+        /* BOTÃO MENU CELULAR */
+
+        .menu-mobile {
+            display: none;
+
+            color: #d4af37;
+
+            font-size: 25px;
+
+            cursor: pointer;
+        }
+
+
+        /* =====================================================
+           BANNER PRINCIPAL
+           ===================================================== */
+
+        .hero {
+            min-height: 100vh;
+
+            display: grid;
+
+            grid-template-columns: 1.1fr 0.9fr;
+
+            padding-top: 70px;
+        }
+
+
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 80px;
+        }
+
+
+        .hero-left small {
+            color: #d4af37;
+
+            letter-spacing: 4px;
+
+            font-size: 11px;
+
+            font-weight: bold;
+        }
+
+
+        .hero-left h1 {
+            font-size: 62px;
+
+            line-height: 0.95;
+
+            margin: 20px 0;
+
+            font-weight: 900;
+
+            text-transform: uppercase;
+        }
+
+
+        .hero-left h1 span {
+            color: #d4af37;
+
+            display: block;
+        }
+
+
+        .hero-left p {
+            color: #777;
+
+            font-size: 14px;
+
+            max-width: 420px;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* BOTÃO DOURADO */
+
+        .btn-gold {
+            background: #d4af37;
+
+            color: #000;
+
+            padding: 16px 25px;
+
+            border-radius: 50px;
+
+            font-size: 12px;
+
+            font-weight: 900;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            width: fit-content;
+
+            transition: 0.3s;
+        }
+
+
+        .btn-gold:hover {
+            background: #ffffff;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* FOTO PRINCIPAL */
+
+        .hero-right {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.15),
+                    rgba(0,0,0,0.45)
+                ),
+
+                url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200")
+                center/cover;
+        }
+
+
+        /* =====================================================
+           SEÇÕES
+           ===================================================== */
+
+        .section {
+            padding: 90px 7%;
+
+            max-width: 1500px;
+
+            margin: auto;
+        }
+
+
+        .section-tit {
+            margin-bottom: 35px;
+        }
+
+
+        .section-tit h2 {
+            font-size: 30px;
+
+            font-weight: 900;
+
+            text-transform: uppercase;
+        }
+
+
+        .section-tit h2 span {
+            color: #d4af37;
+        }
+
+
+        .section-tit p {
+            color: #555;
+
+            font-size: 11px;
+
+            margin-top: 5px;
+        }
+
+
+        /* =====================================================
+           CORTES
+           ===================================================== */
+
+        .cortes-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 15px;
+        }
+
+
+        .corte-card {
+            background: #111;
+
+            border: 1px solid #222;
+
+            border-radius: 16px;
+
+            padding: 22px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        .corte-card:hover {
+            border-color: #d4af37;
+
+            transform: translateY(-5px);
+        }
+
+
+        .corte-card .topo-card {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+        }
+
+
+        .corte-card .icone-corte {
+            color: #d4af37;
+
+            font-size: 20px;
+        }
+
+
+        .preco {
+            color: #d4af37;
+
+            font-weight: 900;
+        }
+
+
+        .corte-card h3 {
+            margin-top: 15px;
+
+            font-size: 13px;
+        }
+
+
+        .corte-card p {
+            color: #555;
+
+            font-size: 10px;
+
+            margin-top: 5px;
+        }
+
+
+        /* =====================================================
+           GALERIA
+           ===================================================== */
+
+        .galeria {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 12px;
+        }
+
+
+        .galeria-item {
+            height: 260px;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            border: 1px solid #222;
+        }
+
+
+        .galeria-item img {
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: 0.5s;
+        }
+
+
+        .galeria-item:hover img {
+            transform: scale(1.08);
+        }
+
+
+        /* =====================================================
+           AGENDAMENTO
+           ===================================================== */
+
+        .agenda-area {
+            display: grid;
+
+            grid-template-columns: 1.2fr 0.8fr;
+
+            gap: 40px;
+        }
+
+
+        .form {
+            background: #111;
+
+            border: 1px solid #222;
+
+            border-radius: 24px;
+
+            padding: 30px;
+        }
+
+
+        .form input {
+            width: 100%;
+
+            background: #080808;
+
+            color: #ffffff;
+
+            border: 1px solid #292929;
+
+            border-radius: 12px;
+
+            padding: 15px;
+
+            outline: none;
+
+            margin-top: 10px;
+        }
+
+
+        .form input:focus {
+            border-color: #d4af37;
+        }
+
+
+        .linha-input {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 10px;
+        }
+
+
+        .btn-confirmar {
+            width: 100%;
+
+            margin-top: 15px;
+
+            padding: 16px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background: #25D366;
+
+            color: #ffffff;
+
+            font-weight: 900;
+
+            cursor: pointer;
+
+            font-size: 13px;
+
+            transition: 0.3s;
+        }
+
+
+        .btn-confirmar:hover {
+            background: #128C7E;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           CONTATO
+           ===================================================== */
+
+        .contato-item {
+            background: #111;
+
+            border: 1px solid #222;
+
+            border-radius: 16px;
+
+            padding: 17px;
+
+            display: flex;
+
+            gap: 14px;
+
+            align-items: center;
+
+            margin-bottom: 12px;
+        }
+
+
+        .contato-item .ic {
+            width: 46px;
+
+            height: 46px;
+
+            border-radius: 12px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 20px;
+        }
+
+
+        .ic-whatsapp {
+            background: #25D366;
+            color: #ffffff;
+        }
+
+
+        .ic-instagram {
+            background: #E4405F;
+            color: #ffffff;
+        }
+
+
+        .ic-facebook {
+            background: #1877F2;
+            color: #ffffff;
+        }
+
+
+        .ic-localizacao {
+            background: #EA4335;
+            color: #ffffff;
+        }
+
+
+        .ic-horario {
+            background: #d4af37;
+            color: #000;
+        }
+
+
+        .contato-texto b {
+            display: block;
+
+            font-size: 13px;
+        }
+
+
+        .contato-texto span {
+            color: #666;
+
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           RODAPÉ
+           ===================================================== */
+
+        footer {
+            background: #050505;
+
+            text-align: center;
+
+            padding: 45px 20px;
+
+            border-top: 1px solid #222;
+        }
+
+
+        footer p {
+            color: #555;
+
+            font-size: 11px;
+
+            margin-top: 10px;
+        }
+
+
+        /* =====================================================
+           WHATSAPP FLUTUANTE
+           ===================================================== */
+
+        .zap {
+            position: fixed;
+
+            bottom: 25px;
+
+            right: 25px;
+
+            width: 62px;
+
+            height: 62px;
+
+            background: #25D366;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #ffffff;
+
+            font-size: 30px;
+
+            z-index: 999;
+
+            box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+
+            transition: 0.3s;
+        }
+
+
+        .zap:hover {
+            transform: scale(1.1);
+
+            background: #128C7E;
+        }
+
+
+        /* =====================================================
+           RESPONSIVO
+           ===================================================== */
+
+        @media (max-width: 1000px) {
+
+            .menu-mobile {
+                display: block;
+            }
+
+
+            .menu {
+                position: absolute;
+
+                top: 70px;
+
+                left: 0;
+
+                width: 100%;
+
+                background: #080808;
+
+                display: none;
+
+                flex-direction: column;
+
+                padding: 25px;
+
+                text-align: center;
+
+                border-bottom: 1px solid #222;
+            }
+
+
+            .menu.ativo {
+                display: flex;
+            }
+
+
+            .menu-social {
+                display: none;
+            }
+
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+
+            .hero-left {
+                padding: 110px 25px 60px;
+            }
+
+
+            .hero-left h1 {
+                font-size: 45px;
+            }
+
+
+            .hero-right {
+                min-height: 500px;
+            }
+
+
+            .cortes-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+
+            .galeria {
+                grid-template-columns: 1fr 1fr;
+            }
+
+
+            .agenda-area {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .topo {
+                padding: 0 18px;
+            }
+
+
+            .logo {
+                font-size: 12px;
+            }
+
+
+            .section {
+                padding: 60px 20px;
+            }
+
+
+            .cortes-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+
+
+            .galeria-item {
+                height: 240px;
+            }
+
+
+            .linha-input {
+                grid-template-columns: 1fr;
+            }
+
+
+            .hero-left h1 {
+                font-size: 38px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CABEÇALHO
+         ===================================================== -->
+
+    <header class="topo">
+
+
+        <!-- LOGO -->
+
+        <a href="#inicio" class="logo">
+
+            <i class="fa-solid fa-scissors"></i>
+
+            ESTILO <span>ALTAS MODAS</span>
+
+        </a>
+
+
+        <!-- MENU -->
+
+        <nav>
+
+            <ul class="menu" id="menu">
+
+                <li>
+                    <a href="#inicio">
+                        INÍCIO
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#cortes">
+                        CORTES
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#galeria">
+                        GALERIA
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#agenda" class="menu-agendar">
+
+                        <i class="fa-regular fa-calendar-check"></i>
+
+                        AGENDAR
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- ÍCONES DAS REDES -->
+
+        <div class="menu-social">
+
+
+            <!-- INSTAGRAM -->
+
+            <a
+                href="https://www.instagram.com/estilo_altas_modas?igsi=MmVtbTAwa3drbHhk"
+                target="_blank"
+                class="icone-instagram"
+                title="Instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <!-- WHATSAPP -->
+
+            <a
+                href="https://wa.me/5563992603302"
+                target="_blank"
+                class="icone-whatsapp"
+                title="WhatsApp">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+
+            <!-- FACEBOOK -->
+
+            <a
+                href="https://www.facebook.com/share/1MS67hEZum/"""
+                class="icone-facebook"
+                title="Facebook">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+
+            <!-- LOCALIZAÇÃO -->
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Ponte+Alta+do+Tocantins+TO"
+                target="_blank"
+                class="icone-localizacao"
+                title="Localização">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+            </a>
+            
+        </div>
+
+
+        <!-- BOTÃO DO CELULAR -->
+
+        <div class="menu-mobile" id="menuMobile">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         INÍCIO
+         ===================================================== -->
+
+    <section class="hero" id="inicio">
+
+
+        <div class="hero-left">
+
+            <small>
+                PONTE ALTA - TO
+            </small>
+
+
+            <h1>
+
+                BARBEARIA
+
+                <span>
+                    MODERNA COMPLETA
+                </span>
+
+            </h1>
+
+
+            <p>
+                Cortes que impõem respeito.
+                Autoestima e estilo com acabamento premium.
+            </p>
+
+
+            <!-- BOTÃO PRINCIPAL -->
+
+            <a
+                href="#agenda"
+                class="btn-gold">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                AGENDAR HORÁRIO
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-right"></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MENU DE CORTES
+         ===================================================== -->
+
+    <section class="section" id="cortes">
+
+
+        <div class="section-tit">
+
+            <h2>
+                MENU DE <span>CORTES</span>
+            </h2>
+
+            <p>
+                CLIQUE NO CORTE PARA AGENDAR
+            </p>
+
+        </div>
+
+
+        <div class="cortes-grid">
+
+
+            <!-- CORTE 1 -->
+
+            <div
+                class="corte-card"
+                onclick="selecionarCorte('Degradê Navalhado - R$45')">
+
+                <div class="topo-card">
+
+                    <i class="fa-solid fa-scissors icone-corte"></i>
+
+                    <span class="preco">
+                        R$45
+                    </span>
+
+                </div>
+
+                <h3>
+                    DEGRADÊ NAVALHADO
+                </h3>
+
+                <p>
+                    Zero na navalha
+                </p>
+
+            </div>
+
+
+            <!-- CORTE 2 -->
+
+            <div
+                class="corte-card"
+                onclick="selecionarCorte('Low Fade Baixo - R$45')">
+
+                <div class="topo-card">
+
+                    <i class="fa-solid fa-user icone-corte"></i>
+
+                    <span class="preco">
+                        R$45
+                    </span>
+
+                </div>
+
+                <h3>
+                    LOW FADE BAIXO
+                </h3>
+
+                <p>
+                    Discreto e elegante
+                </p>
+
+            </div>
+
+
+            <!-- CORTE 3 -->
+
+            <div
+                class="corte-card"
+                onclick="selecionarCorte('Mid Fade Médio - R$45')">
+
+                <div class="topo-card">
+
+                    <i class="fa-solid fa-star icone-corte"></i>
+
+                    <span class="preco">
+                        R$45
+                    </span>
+
+                </div>
+
+                <h3>
+                    MID FADE MÉDIO
+                </h3>
+
+                <p>
+                    Americano equilibrado
+                </p>
+
+            </div>
+
+
+            <!-- CORTE 4 -->
+
+            <div
+                class="corte-card"
+                onclick="selecionarCorte('High Fade Alto - R$45')">
+
+                <div class="topo-card">
+
+                    <i class="fa-solid fa-bolt icone-corte"></i>
+
+                    <span class="preco">
+                        R$45
+                    </span>
+
+                </div>
+
+                <h3>
+                    HIGH FADE ALTO
+                </h3>
+
+                <p>
+                    Estilo jogador
+                </p>
+
+            </div>
+
+
+            <!-- CORTE 5 -->
+
+            <div
+                class="corte-card"
+                onclick="selecionarCorte('Corte com Risca - R$55')">
+
+                <div class="topo-card">
+
+                    <i class="fa-solid fa-wand-magic-sparkles icone-corte"></i>
+
+                    <span class="preco">
+                        R$55
+                    </span>
+
+                </div>
+
+                <h3>
+                    CORTE COM RISCA
+                </h3>
+
+                <p>
+                    Desenho na régua
+                </p>
+
+            </div>
+
+
+            <!-- CORTE 6 -->
+
+            <div
+                class="corte-card"
+                onclick="selecionarCorte('Barba Thèrapie - R$40')">
+
+                <div class="topo-card">
+
+                    <i class="fa-solid fa-face-smile icone-corte"></i>
+
+                    <span class="preco">
+                        R$40
+                    </span>
+
+                </div>
+
+                <h3>
+                    BARBA THÉRAPIE
+                </h3>
+
+                <p>
+                    Toalha quente
+                </p>
+
+            </div>
+
+
+            <!-- CORTE 7 -->
+
+            <div
+                class="corte-card"
+                onclick="selecionarCorte('Social Clássico - R$40')">
+
+                <div class="topo-card">
+
+                    <i class="fa-solid fa-briefcase icone-corte"></i>
+
+                    <span class="preco">
+                        R$40
+                    </span>
+
+                </div>
+
+                <h3>
+                    SOCIAL CLÁSSICO
+                </h3>
+
+                <p>
+                    Corte executivo
+                </p>
+
+            </div>
+
+
+            <!-- CORTE 8 -->
+
+            <div
+                class="corte-card"
+                onclick="selecionarCorte('Combo Completo - R$80')">
+
+                <div class="topo-card">
+
+                    <i class="fa-solid fa-crown icone-corte"></i>
+
+                    <span class="preco">
+                        R$80
+                    </span>
+
+                </div>
+
+                <h3>
+                    COMBO COMPLETO
+                </h3>
+
+                <p>
+                    Cabelo + Barba
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         GALERIA
+         ===================================================== -->
+
+    <section class="section" id="galeria">
+
+
+        <div class="section-tit">
+
+            <h2>
+                NOSSO <span>TRABALHO</span>
+            </h2>
+
+            <p>
+                CONFIRA ALGUNS DOS NOSSOS CORTES
+            </p>
+
+        </div>
+
+
+        <div class="galeria">
+
+
+            <div class="galeria-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800"
+                    alt="Barba masculina">
+
+            </div>
+
+
+            <div class="galeria-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800"
+                    alt="Barbearia">
+
+            </div>
+
+
+            <div class="galeria-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800"
+                    alt="Barbeiro">
+
+            </div>
+
+
+            <div class="galeria-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800"
+                    alt="Corte masculino">
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         AGENDAMENTO
+         ===================================================== -->
+
+    <section class="section" id="agenda">
+
+
+        <div class="agenda-area">
+
+
+            <!-- FORMULÁRIO -->
+
+            <div>
+
+                <div class="section-tit">
+
+                    <h2>
+                        AGENDE SEU <span>HORÁRIO</span>
+                    </h2>
+
+                    <p>
+                        PREENCHA OS DADOS E CONFIRME PELO WHATSAPP
+                    </p>
+
+                </div>
+
+
+                <div class="form">
+
+
+                    <input
+                        type="text"
+                        id="corte"
+                        placeholder="Escolha um corte acima"
+                        readonly>
+
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Seu nome">
+
+
+                    <div class="linha-input">
+
+
+                        <input
+                            type="date"
+                            id="data">
+
+
+                        <input
+                            type="time"
+                            id="hora">
+
+
+                    </div>
+
+
+                    <!-- BOTÃO CORRIGIDO -->
+
+                    <button
+                        class="btn-confirmar"
+                        onclick="agendar()">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        CONFIRMAR NO WHATSAPP
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTATOS -->
+
+            <div>
+
+
+                <div class="section-tit">
+
+                    <h2>
+                        FALE <span>CONOSCO</span>
+                    </h2>
+
+                </div>
+
+
+                <!-- WHATSAPP -->
+
+                <div class="contato-item">
+
+                    <div class="ic ic-whatsapp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </div>
+
+                    <div class="contato-texto">
+
+                        <b>
+                            WhatsApp
+                        </b>
+
+                        <span>
+                            (63) 99260-3302
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INSTAGRAM -->
+
+                <div class="contato-item">
+
+                    <div class="ic ic-instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </div>
+
+                    <div class="contato-texto">
+
+                        <b>
+                            Instagram
+                        </b>
+
+                        <span>
+                            @estilo.altas.modas
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FACEBOOK -->
+
+                <div class="contato-item">
+
+                    <div class="ic ic-facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </div>
+
+                    <div class="contato-texto">
+
+                        <b>
+                            Facebook
+                        </b>
+
+                        <span>
+                            Nossa página
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HORÁRIO -->
+
+                <div class="contato-item">
+
+                    <div class="ic ic-horario">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                    </div>
+
+                    <div class="contato-texto">
+
+                        <b>
+                            Horário
+                        </b>
+
+                        <span>
+                            Seg-Sex 08h-20h | Sáb 08h-18h
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOCALIZAÇÃO -->
+
+                <div class="contato-item">
+
+                    <div class="ic ic-localizacao">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+                    <div class="contato-texto">
+
+                        <b>
+                            Localização
+                        </b>
+
+                        <span>
+                            Ponte Alta - TO
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RODAPÉ
+         ===================================================== -->
+
+    <footer>
+
+
+        <div class="logo">
+
+            <i class="fa-solid fa-scissors"></i>
+
+            ESTILO <span>ALTAS MODAS</span>
+
+        </div>
+
+
+        <p>
+            © 2026 Estilo Altas Modas - Barbearia Premium
+        </p>
+
+
+    </footer>
+
+
+    <!-- =====================================================
+         BOTÃO WHATSAPP FLUTUANTE
+         ===================================================== -->
+
+    <a
+        class="zap"
+        href="https://wa.me/5563992603302"
+        target="_blank"
+        title="Falar no WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script>
+
+
+        /* =====================================================
+           ESCOLHER O CORTE
+           ===================================================== */
+
+        function selecionarCorte(corte) {
+
+            document.getElementById("corte").value = corte;
+
+            document
+                .getElementById("agenda")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+
+
+        /* =====================================================
+           AGENDAR PELO WHATSAPP
+           ===================================================== */
+
+        function agendar() {
+
+
+            /* PEGAR OS DADOS DO FORMULÁRIO */
+
+            const nome =
+                document.getElementById("nome").value.trim();
+
+
+            const corte =
+                document.getElementById("corte").value.trim();
+
+
+            const data =
+                document.getElementById("data").value;
+
+
+            const hora =
+                document.getElementById("hora").value;
+
+
+            /* VERIFICAR NOME */
+
+            if (nome === "") {
+
+                alert("Digite seu nome.");
+
+                return;
+
+            }
+
+
+            /* VERIFICAR CORTE */
+
+            if (corte === "") {
+
+                alert("Escolha um corte no menu.");
+
+                return;
+
+            }
+
+
+            /* VERIFICAR DATA */
+
+            if (data === "") {
+
+                alert("Escolha a data do agendamento.");
+
+                return;
+
+            }
+
+
+            /* VERIFICAR HORÁRIO */
+
+            if (hora === "") {
+
+                alert("Escolha o horário.");
+
+                return;
+
+            }
+
+
+            /* =================================================
+               MONTAR A MENSAGEM DO WHATSAPP
+               ================================================= */
+
+            const mensagem =
+                `Olá! Quero agendar um horário na Estilo Altas Modas.
+
+Nome: ${nome}
+Serviço: ${corte}
+Data: ${data}
+Horário: ${hora}`;
+
+
+            /* TRANSFORMAR A MENSAGEM PARA URL */
+
+            const mensagemCodificada =
+                encodeURIComponent(mensagem);
+
+
+            /* NÚMERO DA BARBEARIA */
+
+            const numero =
+                "5563992603302";
+
+
+            /* LINK FINAL DO WHATSAPP */
+
+            const link =
+                `https://wa.me/${numero}?text=${mensagemCodificada}`;
+
+
+            /* ABRIR WHATSAPP */
+
+            window.open(link, "_blank");
+
+        }
+
+
+        /* =====================================================
+           MENU DO CELULAR
+           ===================================================== */
+
+        const menuMobile =
+            document.getElementById("menuMobile");
+
+
+        const menu =
+            document.getElementById("menu");
+
+
+        menuMobile.addEventListener("click", function () {
+
+            menu.classList.toggle("ativo");
+
+        });
+
+
+        /* =====================================================
+           FECHAR MENU DEPOIS DE CLICAR
+           ===================================================== */
+
+        const linksMenu =
+            document.querySelectorAll(".menu a");
+
+
+        linksMenu.forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                menu.classList.remove("ativo");
+
+            });
+
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
+```

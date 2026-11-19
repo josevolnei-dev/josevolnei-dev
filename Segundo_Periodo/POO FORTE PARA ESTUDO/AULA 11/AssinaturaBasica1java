@@ -1,0 +1,41 @@
+
+public class AssinaturaBasica1 extends Assinatura { // Herda os atributos e métodos da classe Assinatura
+
+    private double valorFixo; // Guarda o preço fixo do plano básico
+
+    public AssinaturaBasica1(String nomeCliente, double valorFixo) { // Construtor da assinatura básica
+        super(nomeCliente); // Chama o construtor da classe mãe
+        this.valorFixo = valorFixo; // Guarda o valor fixo recebido
+    }
+
+    @Override // Indica que este método sobrescreve o método abstrato da classe mãe
+    public double calcularValorMensal() { // Implementa o cálculo do plano básico
+        return valorFixo; // Retorna o preço fixo mensal
+    }
+}
+/*
+
+public class AssinaturaBasica extends Assinatura { // Herda os atributos e métodos da
+//  classe Assinatura
+
+    private double valorFixo; // Guarda o preço fixo do plano básico
+
+    public AssinaturaBasica(String nomeCliente, double valorFixo) { // Construtor da
+    //  assinatura básica
+        super(nomeCliente); // Chama o construtor da classe mãe
+        this.valorFixo = valorFixo; // Guarda o valor fixo recebido
+    }
+
+    @Override // Indica que este método sobrescreve o método abstrato da classe mãe
+    public double calcularValorMensal() { // Implementa o cálculo do plano básico
+        return valorFixo; // Retorna o preço fixo mensal
+    }
+}
+
+
+
+
+
+
+
+*/

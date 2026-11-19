@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RotaAcessível - Mapeamento Colaborativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="navbar">
+        <div class="logo">♿ RotaAcessível</div>
+        <button class="btn-login">Entrar / Cadastrar</button>
+    </header>
+
+    <!-- TELA 1: BUSCA E LISTAGEM -->
+    <main class="container">
+        <section class="search-section">
+            <h1>Encontre locais acessíveis perto de você</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Pesquise por nome do local, rua ou categoria (ex: Cafeteria)...">
+                <button class="btn-search">Buscar</button>
+            </div>
+            
+            <!-- FILTROS DE ACESSIBILIDADE -->
+            <div class="filters">
+                <span>Filtros rápidos:</span>
+                <label><input type="checkbox" checked> ♿ Rampa de Acesso</label>
+                <label><input type="checkbox"> 🚻 Banheiro Adaptado</label>
+                <label><input type="checkbox"> 🛗 Elevador</label>
+            </div>
+        </section>
+
+        <!-- LISTA DE ESTABELECIMENTOS -->
+        <section class="results-section">
+            <h2>Estabelecimentos Encontrados</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>Cafeteria Sabor & Grão</h3>
+                    <span class="category">Alimentação</span>
+                </div>
+                <p>📍 Rua das Flores, nº 123 - Centro</p>
+                <div class="tags">
+                    <span class="tag tag-yes">♿ Rampa: Sim</span>
+                    <span class="tag tag-no">🚻 Banheiro: Não</span>
+                    <span class="tag tag-no">🛗 Elevador: Não</span>
+                </div>
+                <button class="btn-details" onclick="toggleDetails()">Ver Detalhes e Avaliações</button>
+            </div>
+        </section>
+
+        <!-- TELA 2: DETALHES E FORMULÁRIO DE AVALIAÇÃO -->
+        <section id="details-section" class="details-section hidden">
+            <hr>
+            <h2>Detalhes: Cafeteria Sabor & Grão</h2>
+            <p><strong>Nota Média:</strong> ⭐ 4.5 / 5.0 (baseado em 12 avaliações)</p>
+
+            <h3>Avaliações da Comunidade</h3>
+            <div class="review-box">
+                <p><strong>Ana Souza:</strong> "O local possui rampa excelente na entrada, mas o banheiro é apertado para cadeira de rodas."</p>
+                <small>Avaliado em: 10/10/2026</small>
+            </div>
+
+            <!-- FORMULÁRIO DE NOVA AVALIAÇÃO -->
+            <form class="review-form" onsubmit="event.preventDefault(); alert('Avaliação enviada com sucesso!');">
+                <h3>Enviar Nova Avaliação</h3>
+                <label for="rating">Sua Nota:</label>
+                <select id="rating">
+                    <option value="5">⭐⭐⭐⭐⭐ (5 - Excelente Acessibilidade)</option>
+                    <option value="4">⭐⭐⭐⭐ (4 - Boa Acessibilidade)</option>
+                    <option value="3">⭐⭐⭐ (3 - Acessibilidade Regular)</option>
+                    <option value="2">⭐⭐ (2 - Ruim)</option>
+                    <option value="1">⭐ (1 - Inacessível)</option>
+                </select>
+
+                <label for="comment">Seu Comentário:</label>
+                <textarea id="comment" rows="3" placeholder="Descreva os recursos de acessibilidade que encontrou no local..."></textarea>
+
+                <label for="photo">Anexar Foto da Entrada/Acessibilidade:</label>
+                <input type="file" id="photo">
+
+                <button type="submit" class="btn-submit">Enviar Avaliação</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function toggleDetails() {
+            const details = document.getElementById('details-section');
+            details.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

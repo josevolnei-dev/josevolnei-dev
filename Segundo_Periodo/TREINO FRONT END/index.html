@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Define que o documento segue o padrão moderno do HTML5 -->
+<html lang="pt-BR">
+<!-- Início da página web com o idioma principal definido como Português do Brasil -->
+<head>
+    <!-- Configuração da codificação de caracteres para suportar acentos (UTF-8) -->
+    <meta charset="UTF-8">
+    <!-- Garante que a página seja responsiva e se ajuste a celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece na aba do navegador -->
+    <title>Rota da Inclusão - Início</title>
+    
+    <!-- Tailwind CSS: Framework de estilização pronto (carregado via link externo/CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome: Biblioteca externa utilizada para renderizar ícones modernos (como lupa, cadeira de rodas, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<!-- Corpo da página (body): Configura fundo cinza claro, fonte padrão, espaçamento interno responsivo e layout flexível -->
+<body class="bg-gray-100 text-gray-800 font-sans antialiased p-4 md:p-8 flex flex-col justify-between min-h-screen">
+
+    <!-- Container centralizado que limita a largura máxima da aplicação na tela -->
+    <div class="max-w-5xl mx-auto w-full">
+        <!-- Caixa principal com fundo branco, cantos arredondados, sombra elegante e borda sutil -->
+        <div class="bg-white rounded-2xl shadow-xl border border-gray-300 overflow-hidden">
+            
+            <!-- Faixa Superior Azul (Cabeçalho de identificação institucional) -->
+            <div class="bg-blue-900 text-white text-xs px-6 py-2 flex justify-between items-center">
+                <!-- Texto em negrito identificando o projeto -->
+                <span class="font-semibold">SEMINÁRIO | Rota da Inclusão</span>
+                <!-- Identificação do grupo acadêmico -->
+                <span class="text-blue-200">Grupo 1</span>
+            </div>
+            
+            <!-- MENU PRINCIPAL: Barra de navegação superior com fundo azul escuro -->
+            <header class="bg-blue-800 text-white px-6 py-4 flex justify-between items-center shadow-md">
+                <!-- Logotipo do sistema com ícone de acessibilidade -->
+                <div class="flex items-center space-x-2 text-xl font-bold tracking-tight">
+                    <i class="fa-solid fa-wheelchair text-blue-200"></i>
+                    <span>LOGO &</span>
+                </div>
+                <!-- Links de navegação do menu (visíveis em telas médias/grandes) -->
+                <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-wider">
+                    <a href="index.html" class="text-white hover:text-blue-200 transition">Início</a>
+                    <a href="index_detalhes.html" class="text-blue-200 hover:text-white transition">Detalhes</a>
+                </nav>
+                <!-- Botão interativo [ ENTRAR ] que direciona o usuário para a página de detalhes -->
+                <a href="index_detalhes.html" class="border-2 border-white text-white px-4 py-1.5 rounded text-xs font-bold hover:bg-white hover:text-blue-800 transition shadow-sm">
+                    [ ENTRAR ]
+                </a>
+            </header>
+
+            <!-- Conteúdo Principal da Página (Main) -->
+            <main class="p-8 text-center max-w-3xl mx-auto">
+                <!-- Título principal da aplicação -->
+                <h1 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-3">Rota da Inclusão</h1>
+                <!-- Parágrafo descritivo contextualizando o problema do ODS 10 -->
+                <p class="text-xs md:text-sm text-gray-600 mb-8 max-w-lg mx-auto leading-relaxed">
+                    Pessoas com mobilidade reduzida ou deficiência enfrentam desafios diários para encontrar estabelecimentos adequados de acessibilidade.
+                </p>
+
+                <!-- Barra de Busca de locais acessíveis -->
+                <div class="border-2 border-blue-900 rounded-full max-w-xl mx-auto p-1.5 flex items-center mb-10 bg-white shadow-sm">
+                    <!-- Campo de texto onde o usuário digita o nome do local -->
+                    <input type="text" id="campoBusca" placeholder="BUSCAR LOCAL ACESSÍVEL..." class="w-full px-4 py-1 text-xs font-bold uppercase text-gray-700 outline-none bg-transparent">
+                    <!-- Botão de pesquisa com ícone de lupa -->
+                    <a href="index_detalhes.html" class="bg-blue-800 text-white w-9 h-9 rounded-full flex items-center justify-center hover:bg-blue-900 transition shadow flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Cards de Filtro por Categoria de Acessibilidade (Grid de 3 colunas) -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                    
+                    <!-- Card 1: Filtro de Rampa -->
+                    <div class="border border-gray-300 rounded-xl p-5 text-center bg-white shadow-sm hover:shadow-md transition">
+                        <i class="fa-solid fa-wheelchair-move text-4xl text-blue-700 mb-2"></i>
+                        <h3 class="font-extrabold text-xs uppercase mb-1">RAMPA</h3>
+                        <p class="text-[10px] text-gray-500 mb-4">Acesso sem degraus</p>
+                        <a href="index_detalhes.html" class="block w-full bg-blue-700 text-white py-1.5 rounded text-xs font-bold hover:bg-blue-800 transition text-center">Filtrar</a>
+                    </div>
+
+                    <!-- Card 2: Filtro de Banheiro Adaptado -->
+                    <div class="border border-gray-300 rounded-xl p-5 text-center bg-white shadow-sm hover:shadow-md transition">
+                        <i class="fa-solid fa-toilet text-4xl text-blue-700 mb-2"></i>
+                        <h3 class="font-extrabold text-xs uppercase mb-1">BANHEIRO</h3>
+                        <p class="text-[10px] text-gray-500 mb-4">Banheiro adaptado</p>
+                        <a href="index_detalhes.html" class="block w-full bg-blue-700 text-white py-1.5 rounded text-xs font-bold hover:bg-blue-800 transition text-center">Filtrar</a>
+                    </div>
+
+                    <!-- Card 3: Filtro de Transporte Acessível -->
+                    <div class="border border-gray-300 rounded-xl p-5 text-center bg-white shadow-sm hover:shadow-md transition">
+                        <i class="fa-solid fa-bus text-4xl text-blue-700 mb-2"></i>
+                        <h3 class="font-extrabold text-xs uppercase mb-1">TRANSPORTE</h3>
+                        <p class="text-[10px] text-gray-500 mb-4">Transporte acessível</p>
+                        <a href="index_detalhes.html" class="block w-full bg-blue-700 text-white py-1.5 rounded text-xs font-bold hover:bg-blue-800 transition text-center">Filtrar</a>
+                    </div>
+
+                </div>
+            </main>
+
+            <!-- Rodapé do protótipo indicando a tela exibida -->
+            <footer class="text-center py-2 bg-gray-50 text-[10px] font-bold text-gray-500 border-t border-gray-200">
+                TELA 1: Página Inicial de Busca - DESKTOP
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

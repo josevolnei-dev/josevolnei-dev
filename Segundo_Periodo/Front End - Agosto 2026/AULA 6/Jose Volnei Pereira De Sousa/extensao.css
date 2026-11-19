@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.topo {
+    background-image: url('image/imgAgro.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    
+}
+
+.topo h1 {
+    font-size: 3em;
+}
+
+nav {
+    background-color: #388e3c;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #2e7d32;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.bloco {
+    margin-bottom: 40px;
+}
+
+.bloco h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.bloco p {
+    color: #333;
+}
+
+
+
+.foto-produto {
+        width:300px;
+        cursor:zoom-in;
+        transition: transform 0.4s ease;
+        display:block;
+
+
+    }
+
+    #zoom:checked + label .foto-produto {
+    transform:scale(1.5);
+    cursor:zoom-out;
+    position:relative;
+    z-index:10;
+}
+
+
+.comentarios {
+    margin-bottom: 40px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #66bb6a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.comentarios h2 {
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+.comentario {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #c8e6c9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.comentario p {
+    margin-bottom: 8px;
+}
+
+.comentario strong {
+    color: #388e3c;
+}
+
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+
+
+    
+
+
+
+
+

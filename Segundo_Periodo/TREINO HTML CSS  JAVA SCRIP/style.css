@@ -1,0 +1,330 @@
+/* ================================================= */
+/* CONFIGURAÇÃO GERAL DA PÁGINA */
+/* ================================================= */
+
+* {
+    /* Seleciona todos os elementos da página */
+
+    box-sizing: border-box;
+    /* Faz largura e altura funcionarem de maneira mais previsível */
+}
+
+
+/* ================================================= */
+/* CORPO DA PÁGINA */
+/* ================================================= */
+
+body {
+    /* Aqui estamos estilizando o corpo inteiro da página */
+
+    margin: 0;
+    /* Retira a margem padrão do navegador */
+
+    font-family: Arial, sans-serif;
+    /* Define o tipo de letra */
+
+    background-color: #f2f2f2;
+    /* Coloca uma cor de fundo cinza claro */
+
+    color: #222;
+    /* Define a cor padrão dos textos */
+}
+
+
+/* ================================================= */
+/* TOPO */
+/* ================================================= */
+
+.topo {
+    /* Aqui estamos estilizando o elemento que tem class="topo" */
+
+    background-color: #1e3a8a;
+    /* Define a cor de fundo do topo */
+
+    color: white;
+    /* Define a cor dos textos do topo */
+
+    text-align: center;
+    /* Centraliza os textos */
+
+    padding: 30px;
+    /* Cria espaço dentro do topo */
+
+}
+
+
+/* ================================================= */
+/* TÍTULO DO TOPO */
+/* ================================================= */
+
+.topo h1 {
+    /* Estiliza o h1 que está dentro de .topo */
+
+    margin: 0;
+    /* Retira a margem padrão do título */
+
+    font-size: 36px;
+    /* Define o tamanho do título */
+}
+
+
+/* ================================================= */
+/* MENU */
+/* ================================================= */
+
+.menu {
+    /* Estiliza o elemento que possui class="menu" */
+
+    display: flex;
+    /* Coloca os itens do menu em uma organização flexível */
+
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+
+    gap: 25px;
+    /* Cria espaço entre os links */
+
+    background-color: #111827;
+    /* Define a cor de fundo do menu */
+
+    padding: 15px;
+    /* Cria espaço dentro do menu */
+
+}
+
+
+/* ================================================= */
+/* LINKS DO MENU */
+/* ================================================= */
+
+.menu a {
+    /* Estiliza os links que estão dentro do menu */
+
+    color: white;
+    /* Deixa os links brancos */
+
+    text-decoration: none;
+    /* Retira o sublinhado padrão */
+
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+
+}
+
+
+/* ================================================= */
+/* MOUSE SOBRE O LINK */
+/* ================================================= */
+
+.menu a:hover {
+    /* Aplica o estilo quando o mouse passa sobre o link */
+
+    color: yellow;
+    /* Muda a cor do link */
+
+}
+
+
+/* ================================================= */
+/* SEÇÕES */
+/* ================================================= */
+
+.secao {
+    /* Estiliza todas as partes que possuem class="secao" */
+
+    background-color: white;
+    /* Coloca fundo branco */
+
+    width: 90%;
+    /* Define a largura da seção */
+
+    max-width: 900px;
+    /* Impede que fique larga demais */
+
+    margin: 25px auto;
+    /* Cria espaço e centraliza a seção */
+
+    padding: 25px;
+    /* Cria espaço interno */
+
+    border-radius: 10px;
+    /* Arredonda os cantos */
+
+}
+
+
+/* ================================================= */
+/* TÍTULOS DAS SEÇÕES */
+/* ================================================= */
+
+.secao h2 {
+    /* Estiliza os h2 dentro das seções */
+
+    color: #1e3a8a;
+    /* Deixa os títulos azuis */
+
+    border-bottom: 2px solid #1e3a8a;
+    /* Coloca uma linha abaixo do título */
+
+    padding-bottom: 10px;
+    /* Cria espaço entre o texto e a linha */
+
+}
+
+
+/* ================================================= */
+/* IMAGEM */
+/* ================================================= */
+
+.imagem {
+    /* Estiliza a imagem que possui class="imagem" */
+
+    width: 100%;
+    /* Faz a imagem ocupar a largura disponível */
+
+    max-width: 500px;
+    /* Impede que fique grande demais */
+
+    display: block;
+    /* Faz a imagem se comportar como bloco */
+
+    margin: 20px auto;
+    /* Centraliza a imagem */
+
+    border-radius: 10px;
+    /* Arredonda os cantos da imagem */
+
+}
+
+
+/* ================================================= */
+/* VÍDEO */
+/* ================================================= */
+
+.video {
+    /* Estiliza o vídeo que possui class="video" */
+
+    width: 100%;
+    /* Faz o vídeo ocupar a largura disponível */
+
+    max-width: 700px;
+    /* Limita o tamanho máximo */
+
+    display: block;
+    /* Faz o vídeo ocupar sua própria linha */
+
+    margin: auto;
+    /* Centraliza o vídeo */
+
+}
+
+
+/* ================================================= */
+/* FORMULÁRIO */
+/* ================================================= */
+
+form {
+    /* Estiliza o formulário inteiro */
+
+    display: flex;
+    /* Ativa o Flexbox */
+
+    flex-direction: column;
+    /* Coloca os elementos um abaixo do outro */
+
+    gap: 10px;
+    /* Cria espaço entre os elementos */
+
+}
+
+
+/* ================================================= */
+/* CAMPOS DO FORMULÁRIO */
+/* ================================================= */
+
+input,
+textarea {
+    /* Estiliza os campos input e textarea */
+
+    padding: 12px;
+    /* Cria espaço dentro dos campos */
+
+    border: 1px solid #999;
+    /* Cria uma borda cinza */
+
+    border-radius: 5px;
+    /* Arredonda os cantos */
+
+    font-size: 16px;
+    /* Define o tamanho da letra */
+
+}
+
+
+/* ================================================= */
+/* BOTÃO */
+/* ================================================= */
+
+button {
+    /* Estiliza o botão Enviar */
+
+    background-color: blue;
+    /* Define a cor azul do botão */
+
+    color: white;
+    /* Define a cor branca do texto */
+
+    padding: 12px;
+    /* Cria espaço dentro do botão */
+
+    border: none;
+    /* Retira a borda padrão */
+
+    border-radius: 5px;
+    /* Arredonda os cantos */
+
+    font-size: 16px;
+    /* Define o tamanho da letra */
+
+    cursor: pointer;
+    /* Faz aparecer a mãozinha quando passa o mouse */
+
+}
+
+
+/* ================================================= */
+/* BOTÃO QUANDO PASSA O MOUSE */
+/* ================================================= */
+
+button:hover {
+    /* Aplica o estilo quando o mouse passa sobre o botão */
+
+    background-color: darkblue;
+    /* Muda a cor do botão */
+
+}
+
+
+/* ================================================= */
+/* RODAPÉ */
+/* ================================================= */
+
+.rodape {
+    /* Estiliza o elemento class="rodape" */
+
+    background-color: #111827;
+    /* Define a cor de fundo */
+
+    color: white;
+    /* Define a cor do texto */
+
+    text-align: center;
+    /* Centraliza o texto */
+
+    padding: 20px;
+    /* Cria espaço dentro do rodapé */
+
+    margin-top: 30px;
+    /* Cria espaço acima do rodapé */
+
+}

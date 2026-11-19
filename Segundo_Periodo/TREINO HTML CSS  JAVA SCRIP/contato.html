@@ -1,0 +1,378 @@
+```html
+<!DOCTYPE html>
+<!-- Informa ao navegador que estamos usando HTML5 -->
+
+<html lang="pt-BR">
+<!-- Inicia o documento HTML e define o idioma como português do Brasil -->
+
+<head>
+<!-- Inicia o cabeçalho técnico da página -->
+
+    <meta charset="UTF-8">
+    <!-- Permite utilizar acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar a computadores, tablets e celulares -->
+
+    <title>Barbearia Volnei</title>
+    <!-- Define o título que aparece na aba do navegador -->
+
+    <style>
+    /* Inicia a área de CSS da página */
+
+        html {
+        /* Seleciona o documento HTML inteiro */
+
+            scroll-behavior: smooth;
+            /* Faz a página rolar suavemente quando clicamos em um menu */
+        }
+
+        body {
+        /* Seleciona o corpo da página */
+
+            font-family: Arial, sans-serif;
+            /* Define a fonte utilizada na página */
+
+            background-color: #f8f8f8;
+            /* Define a cor de fundo da página */
+
+            color: #333;
+            /* Define a cor padrão dos textos */
+
+            margin: 0;
+            /* Remove a margem padrão do navegador */
+        }
+
+        header {
+        /* Seleciona o cabeçalho da página */
+
+            background-color: #0077b6;
+            /* Define a cor azul do cabeçalho */
+
+            color: #fff;
+            /* Define a cor branca dos textos do cabeçalho */
+
+            padding: 20px;
+            /* Cria espaço interno dentro do cabeçalho */
+        }
+
+        header h1 {
+        /* Seleciona o título principal que está dentro do header */
+
+            margin: 0;
+            /* Remove a margem padrão do título */
+        }
+
+        nav {
+        /* Seleciona a área de navegação */
+
+            margin-top: 20px;
+            /* Cria espaço entre o título e o menu */
+        }
+
+        nav ul {
+        /* Seleciona a lista que está dentro do menu */
+
+            margin: 0;
+            /* Remove a margem padrão da lista */
+
+            padding: 0;
+            /* Remove o espaçamento interno padrão */
+
+            list-style: none;
+            /* Remove as bolinhas da lista */
+        }
+
+        nav ul li {
+        /* Seleciona cada item do menu */
+
+            display: inline-block;
+            /* Coloca os itens do menu lado a lado */
+
+            margin-right: 20px;
+            /* Cria espaço entre os itens */
+        }
+
+        nav ul li a {
+        /* Seleciona os links existentes dentro dos itens do menu */
+
+            color: #fff;
+            /* Define a cor branca dos links */
+
+            text-decoration: none;
+            /* Remove o sublinhado dos links */
+
+            font-weight: bold;
+            /* Deixa os links em negrito */
+
+            padding: 8px;
+            /* Cria espaço interno nos links */
+        }
+
+        nav ul li a:hover {
+        /* Define o comportamento do link quando o mouse passa sobre ele */
+
+            text-decoration: underline;
+            /* Coloca um sublinhado quando o mouse passa sobre o link */
+        }
+
+        main {
+        /* Seleciona o conteúdo principal da página */
+
+            max-width: 960px;
+            /* Define uma largura máxima para o conteúdo */
+
+            margin: 0 auto;
+            /* Centraliza o conteúdo horizontalmente */
+
+            padding: 40px;
+            /* Cria espaço interno nos quatro lados */
+        }
+
+        section {
+        /* Seleciona todas as seções da página */
+
+            background-color: #fff;
+            /* Define o fundo branco das seções */
+
+            padding: 25px;
+            /* Cria espaço interno dentro das seções */
+
+            margin-bottom: 40px;
+            /* Cria espaço abaixo de cada seção */
+
+            border-radius: 10px;
+            /* Arredonda os cantos das seções */
+        }
+
+        section h2 {
+        /* Seleciona os títulos das seções */
+
+            color: #0077b6;
+            /* Define a cor azul dos títulos */
+        }
+
+        .servico {
+        /* Seleciona os blocos que possuem a classe servico */
+
+            background-color: #eee;
+            /* Define uma cor de fundo para cada serviço */
+
+            padding: 15px;
+            /* Cria espaço interno */
+
+            margin-bottom: 10px;
+            /* Cria espaço entre os serviços */
+
+            border-radius: 5px;
+            /* Arredonda os cantos dos serviços */
+        }
+
+        .acessoInformacao {
+        /* Seleciona o bloco usado para a imagem */
+
+            display: flex;
+            /* Ativa o modelo flexível de organização */
+        }
+
+        .acessoInformacao a {
+        /* Seleciona o link que receberá a imagem de fundo */
+
+            display: block;
+            /* Faz o link ocupar uma área própria */
+
+            background: url("imagem.jpg") no-repeat;
+            /* Coloca uma imagem como fundo do link */
+
+            width: 294px;
+            /* Define a largura da imagem */
+
+            height: 88px;
+            /* Define a altura da imagem */
+        }
+
+        .acessoInformacao a:hover {
+        /* Define o comportamento quando o mouse passa sobre a imagem */
+
+            background: url("imagemHover.jpg") no-repeat;
+            /* Troca a imagem de fundo quando o mouse passa sobre ela */
+        }
+
+    </style>
+    <!-- Finaliza o CSS -->
+
+</head>
+<!-- Finaliza o cabeçalho técnico -->
+
+<body>
+<!-- Inicia o conteúdo visível da página -->
+
+    <header id="inicio">
+    <!-- Cria o cabeçalho da página e define o destino do menu Início -->
+
+        <h1>Barbearia Volnei</h1>
+        <!-- Cria o título principal da página -->
+
+        <p>Estilo, cuidado e qualidade.</p>
+        <!-- Cria um parágrafo de apresentação -->
+
+        <nav>
+        <!-- Cria a área de navegação do site -->
+
+            <ul>
+            <!-- Cria uma lista não ordenada para o menu -->
+
+                <li>
+                <!-- Cria o primeiro item do menu -->
+
+                    <a href="#inicio">Início</a>
+                    <!-- Cria um link que leva ao início da página -->
+
+                </li>
+                <!-- Finaliza o primeiro item -->
+
+                <li>
+                <!-- Cria o segundo item do menu -->
+
+                    <a href="#sobre">Sobre</a>
+                    <!-- Cria um link que leva à seção Sobre -->
+
+                </li>
+                <!-- Finaliza o segundo item -->
+
+                <li>
+                <!-- Cria o terceiro item do menu -->
+
+                    <a href="#servicos">Serviços</a>
+                    <!-- Cria um link que leva à seção Serviços -->
+
+                </li>
+                <!-- Finaliza o terceiro item -->
+
+                <li>
+                <!-- Cria o quarto item do menu -->
+
+                    <a href="#contato">Contato</a>
+                    <!-- Cria um link que leva à seção Contato -->
+
+                </li>
+                <!-- Finaliza o quarto item -->
+
+            </ul>
+            <!-- Finaliza a lista do menu -->
+
+        </nav>
+        <!-- Finaliza a navegação -->
+
+    </header>
+    <!-- Finaliza o cabeçalho -->
+
+    <main>
+    <!-- Inicia o conteúdo principal da página -->
+
+        <section id="sobre">
+        <!-- Cria a seção Sobre e dá a ela o identificador "sobre" -->
+
+            <h2>Sobre a Barbearia</h2>
+            <!-- Cria o título da seção -->
+
+            <p>
+            <!-- Inicia um parágrafo -->
+
+                Nossa barbearia oferece cortes modernos,
+                barba e atendimento de qualidade.
+                <!-- Texto de apresentação da barbearia -->
+
+            </p>
+            <!-- Finaliza o parágrafo -->
+
+        </section>
+        <!-- Finaliza a seção Sobre -->
+
+        <section id="servicos">
+        <!-- Cria a seção Serviços e dá a ela o identificador "servicos" -->
+
+            <h2>Nossos Serviços</h2>
+            <!-- Cria o título da seção de serviços -->
+
+            <div class="servico">
+            <!-- Cria um bloco para o primeiro serviço -->
+
+                <p>Corte Degradê</p>
+                <!-- Mostra o primeiro serviço -->
+
+            </div>
+            <!-- Finaliza o primeiro bloco -->
+
+            <div class="servico">
+            <!-- Cria um bloco para o segundo serviço -->
+
+                <p>Barba</p>
+                <!-- Mostra o segundo serviço -->
+
+            </div>
+            <!-- Finaliza o segundo bloco -->
+
+            <div class="servico">
+            <!-- Cria um bloco para o terceiro serviço -->
+
+                <p>Corte + Barba</p>
+                <!-- Mostra o terceiro serviço -->
+
+            </div>
+            <!-- Finaliza o terceiro bloco -->
+
+        </section>
+        <!-- Finaliza a seção Serviços -->
+
+        <section id="contato">
+        <!-- Cria a seção Contato e dá a ela o identificador "contato" -->
+
+            <h2>Contato</h2>
+            <!-- Cria o título da seção de contato -->
+
+            <p>Entre em contato conosco.</p>
+            <!-- Mostra uma mensagem para o visitante -->
+
+            <a href="https://wa.me/5500000000000">
+            <!-- Cria um link para o WhatsApp -->
+
+                Falar pelo WhatsApp
+                <!-- Texto que aparece no link -->
+
+            </a>
+            <!-- Finaliza o link do WhatsApp -->
+
+        </section>
+        <!-- Finaliza a seção Contato -->
+
+        <section>
+        <!-- Cria outra seção para demonstrar o exemplo de imagem -->
+
+            <h2>Acesso à informação</h2>
+            <!-- Cria o título da seção -->
+
+            <div class="acessoInformacao">
+            <!-- Cria um bloco para organizar a área da imagem -->
+
+                <a href="#">
+                <!-- Cria um link que recebe a imagem como fundo -->
+
+                </a>
+                <!-- Finaliza o link -->
+
+            </div>
+            <!-- Finaliza o bloco -->
+
+        </section>
+        <!-- Finaliza a seção -->
+
+    </main>
+    <!-- Finaliza o conteúdo principal -->
+
+</body>
+<!-- Finaliza o corpo da página -->
+
+</html>
+<!-- Finaliza o documento HTML -->
+```
